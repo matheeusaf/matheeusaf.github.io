@@ -1,0 +1,542 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Important things -->
+  <meta charset="utf-8"> <!-- Character set configuration -->
+  <title>Matheus A. Fernandes | Desenvolvedor Front-End</title>
+  <meta name="description" content="Olá! Meu nome é Matheus Fernandes, sou desenvolvedor web com mais de 2 anos de experiência se especializando no desenvolvimento front-end..." />
+  <meta name="keywords" content="front end, vuejs, serverless, portfolio, desenvolvedor web, web developer, google, angular, react, material design, materialize, bootstrap" />
+  <meta name="author" content="WAVE Design" />
+  <meta name="copyright" content="Copyright owner" />
+  <meta name="revisit-after" content="7 days" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="application-name" content="&nbsp;"/>
+  <!-- Viewport configuration, scaling options -->
+  <meta name="theme-color" content="#4285f4" /> <!-- Android toolbar color -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- MS tile icons -->
+  <meta name="msapplication-TileColor" content="#4285f4" />
+  <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="favicons/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="favicons/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="favicons/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="favicons/mstile-310x310.png" />
+  <!-- og metatags -->
+  <meta property="og:title" content="Matheus A. Fernandes | Desenvolvedor Front-End" />
+  <meta property="og:site_name" content="Matheus A. Fernandes | Desenvolvedor Front-End" />
+  <meta property="og:description" content="Olá! Meu nome é Matheus Fernandes, sou desenvolvedor web com mais de 2 anos de experiência se especializando no desenvolvimento front-end..." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://ik.imagekit.io/matheeusaf/mlogo_2WzNjEtC6.webp" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="64" />
+  <meta property="og:image:height" content="64" />
+  <meta property="og:locale" content="pt_BR" />
+  <!-- twitter metatags -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@wavedesignrp" />
+  <meta name="twitter:title" content="Matheus A. Fernandes | Desenvolvedor Front-End" />
+  <meta name="twitter:description" content="Olá! Meu nome é Matheus Fernandes, sou desenvolvedor web com mais de 2 anos de experiência se especializando no desenvolvimento front-end..." />
+  <meta name="twitter:image" content="https://ik.imagekit.io/matheeusaf/mlogo_2WzNjEtC6.webp" />
+  <!-- Hide the browser UI -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Android touch icons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/x-icon" sizes="48x48" href="favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+  <!-- Apple touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicons/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicons/apple-touch-icon-152x152.png" />
+  <!-- Refs -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="static/css/pixelstyle.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Pre-loader -->
+  <div id="loading">
+    <div id="loading-center">
+      <div id="loading-center-absolute">
+        <div class="box-holder animated bounceInDown">
+          <span class="load-box"><span class="box-inner"></span></span>
+        </div>
+        <!-- Name & Status -->
+        <div class="text-holder text-center">
+          <h2>MATHEUS A. FERNANDES</h2>
+          <h6>Front-End Dev</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header -->
+  <header id="home">
+    <nav id="theMenu" class="menu">
+      <!-- Menu -->
+      <div id="menu-options" class="menu-wrap">
+        <!-- Menu Logo-->
+        <div class="logo-flat">
+          <img alt="personal-logo" class="img-responsive" src="https://ik.imagekit.io/matheeusaf/mlogo_2WzNjEtC6.webp">
+        </div>
+        <br>
+        <!-- Menu Links -->
+        <a href="#home"><i class="title-icon fa fa-user"></i>Início</a>
+        <a href="#about"><i class="title-icon fa fa-dashboard"></i>Sobre</a>
+        <a href="#education"><i class="title-icon fa fa-graduation-cap"></i>Formação</a>
+        <a href="#skills"><i class="title-icon fa fa-sliders"></i>Habilidades</a>
+        <a href="#portfolios"><i class="title-icon fa fa-archive"></i>Portfólio</a>
+        <a href="#interest"><i class="title-icon fa fa-heart"></i>Interesses</a>
+        <a href="#contact"><i class="title-icon fa fa-envelope"></i>Contato</a>
+      </div>
+      <!-- Menu Button -->
+      <div id="menuToggle">
+        <div class="toggle-normal">
+          <i class="material-icons">menu</i>
+        </div>
+      </div>
+    </nav>
+    <div class="header-background section">
+      <div id="v-card-holder">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div id="v-card" class="card">
+                <div id="profile" class="right">
+                  <img alt="profile-image" class="img-responsive"
+                    src="https://ik.imagekit.io/matheeusaf/mlogo_2WzNjEtC6.webp">
+                  <div class="slant"></div>
+                </div>
+                <div class="card-content">
+                  <div class="info-headings">
+                    <h4 class="text-uppercase left">Matheus A. Fernandes</h4>
+                    <h6 class="text-capitalize left">Desenvolvedor Front-End</h6>
+                  </div>
+                  <!-- Contact Info -->
+                  <div class="infos">
+                    <ul class="profile-list">
+                      <li class="clearfix">
+                        <span class="title"><i class="material-icons">email</i></span>
+                        <a href="mailto:matheus@wavedesign.com.br"><span
+                            class="content">matheus@wavedesign.com.br</span></a>
+                      </li>
+                      <li class="clearfix">
+                        <span class="title"><i class="material-icons">language</i></span>
+                        <a href="https://wavedesign.com.br/" target="_blank"><span
+                            class="content">wavedesign.com.br</span></a>
+                      </li>
+                      <li class="clearfix">
+                        <span class="title"><i class="material-icons">phone</i></span>
+                        <a href="https://wa.me/5517991945919/"><span class="content">(17) 991945919</span></a>
+                      </li>
+                      <li class="clearfix">
+                        <span class="title"><i class="material-icons">place</i></span>
+                        <span class="content">São José do Rio Preto, SP</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Links -->
+                  <div class="links">
+                    <a href="https://facebook.com/matheeusaf/" target="_blank" id="first_one"
+                      class="social btn-floating indigo"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/wavedesignrp/" target="_blank" class="social btn-floating blue"><i
+                        class="fa fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- About -->
+  <div id="about" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="about-card" class="card">
+            <div class="card-content">
+              <!-- Description -->
+              <p>Olá! Meu nome é Matheus Fernandes, sou desenvolvedor web com mais de 2 anos de experiência, se
+                especializando no desenvolvimento front-end.
+                Experienciado todas as etapas de desenvolvimento para projetos dinâmicos na web, desde bancos de dados
+                relacionais a não relacionais, tendo conhecimento em HTML5, CSS3, SASS, WordPress, Magento, JSON, XML,
+                PHP, Python, Web Scraping, Flask, Django, JavaScript, jQuery, VueJS...</p>
+            </div>
+            <div id="about-btn" class="card-action">
+              <div class="about-btn">
+                <!-- Contact Button -->
+                <a href="#contact" class="btn waves-effect">Contato</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Formação / Education -->
+  <section id="education" class="section">
+    <div class="container">
+      <!-- Title -->
+      <div class="section-title">
+        <h4 class="text-uppercase text-center"><i class="title-icon fa fa-graduation-cap"></i>Formação</h4>
+      </div>
+      <div id="timeline-education">
+        <div class="timeline-block">
+          <!-- Dot -->
+          <div class="timeline-dot">
+            <h6>M</h6>
+          </div>
+          <div class="card timeline-content">
+            <div class="card-content">
+              <h6 class="timeline-title">Ensino Fundamental</h6>
+              <div class="timeline-info">
+                <h6><small>E.M.E.F Maria Neves Soubhia</small></h6>
+                <h6><small>Monte Aprazível - SP</small></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-block">
+          <!-- Dot -->
+          <div class="timeline-dot">
+            <h6>C</h6>
+          </div>
+          <div class="card timeline-content">
+            <div class="card-content">
+              <h6 class="timeline-title">Ensino Médio</h6>
+              <div class="timeline-info">
+                <h6><small>E.E Capitão Porfírio De Alcântara Pimentel</small></h6>
+                <h6><small>Monte Aprazível - SP</small></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-block">
+          <!-- Dot -->
+          <div class="timeline-dot">
+            <h6>S</h6>
+          </div>
+          <div class="card timeline-content">
+            <div class="card-content">
+              <h6 class="timeline-title">Técnico em Informática</h6>
+              <div class="timeline-info">
+                <h6><small>Serviço Nacional de Aprendizagem Comercial - SENAC</small></h6>
+                <h6><small>São José do Rio Preto - SP</small></h6>
+              </div>
+              <p>Infraestrutura dométisca, redes de computadores, desenvolvimento web e desktop.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-block">
+          <!-- Dot -->
+          <div class="timeline-dot"><i class="fa fa-graduation-cap"></i></div>
+          <div class="card timeline-content">
+            <div class="card-content">
+              <h6 class="timeline-title">Bacharelado em Sistemas de Informação</h6>
+              <div class="timeline-info">
+                <h6><small>União das Faculdades dos Grandes Lagos - UNILAGO</small></h6>
+                <h6><small>São José do Rio Preto - SP</small></h6>
+              </div>
+              <p>Trabalho de conclusão de curso counstruído com ferramentas Open Source: Python3, Scrapy, Flask e MongoDB.</p>
+              <p>Nota 9,75 de aprovação.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <!-- Title -->
+      <div class="section-title">
+        <h4 class="text-uppercase text-center"><i class="title-icon fa fa-sliders"></i>Habilidades</h4>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div id="skills-card" class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="skillbar" data-percent="90%">
+                    <div class="skillbar-title"><span>HTML5</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">90%</div>
+                  </div>
+                  <div class="skillbar" data-percent="90%">
+                    <div class="skillbar-title"><span>CSS3</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">90%</div>
+                  </div>
+                  <div class="skillbar" data-percent="70%">
+                    <div class="skillbar-title"><span>jQuery</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">70%</div>
+                  </div>
+                  <div class="skillbar" data-percent="68%">
+                    <div class="skillbar-title"><span>PHP</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">68%</div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="skillbar" data-percent="65%">
+                    <div class="skillbar-title"><span>Python 3</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">65%</div>
+                  </div>
+                  <div class="skillbar" data-percent="80%">
+                    <div class="skillbar-title"><span>SEO</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                  </div>
+                  <div class="skillbar" data-percent="80%">
+                    <div class="skillbar-title"><span>WordPress</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                  </div>
+                  <div class="skillbar" data-percent="50%">
+                    <div class="skillbar-title"><span>VueJS</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">50%</div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="skillbar" data-percent="70%">
+                    <div class="skillbar-title"><span>Git</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">70%</div>
+                  </div>
+                  <div class="skillbar" data-percent="80%">
+                    <div class="skillbar-title"><span>Dev Console</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                  </div>
+                  <div class="skillbar" data-percent="75%">
+                    <div class="skillbar-title"><span>Image Optimization</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">75%</div>
+                  </div>
+                  <div class="skillbar" data-percent="80%">
+                    <div class="skillbar-title"><span>Adobe PhotoShop</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">70%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Portfólio -->
+  <section id="portfolios" class="section">
+    <div class="container">
+      <!-- Title -->
+      <div class="section-title">
+        <h4 class="text-uppercase text-center"><i class="title-icon fa fa-archive"></i>Portfólio</h4>
+      </div>
+      <div id="portfolios-card" class="row">
+        <!-- Options -->
+        <ul class="nav nav-tabs">
+          <li class="active waves-effect list-shuffle"><a id="all-sample" class="active text-uppercase" href="#all" data-toggle="tab">Websites</a>
+        </ul>
+        <div class="tab-content">
+          <!-- All Categorias -->
+          <div id="all"></div>
+          <div id="a">
+            <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft">
+              <figure class="port-effect">
+                <img src="https://ik.imagekit.io/matheeusaf/facereshist_vJ2akwFzQ.webp" alt="Imagem de apresentação do website Histologia - Faceres" title="Histologia Faceres"/>
+                <figcaption>
+                  <h2>Histologia <span>Faceres</span></h2>
+                  <p>Website para estudos do sistema digestivo humano.</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+              <figure class="port-effect">
+                <img src="https://ik.imagekit.io/matheeusaf/rkschunk_ge56hQez8.webp" alt="Imagem de apresentação do website RKSchunk" title="RKSchunk" />
+                <figcaption>
+                  <h2>RK <span>SCHUNk</span></h2>
+                  <p>Website desenvolvido para o maintainer android RKSchunk.</p>
+                  <a href="https://rkschunk.github.io/" target="_blank">Visualizar</a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+              <figure class="port-effect">
+                <img src="https://ik.imagekit.io/matheeusaf/viperos_F5zyFxzxm.webp" alt="Imagem de apresentação do website ViperOS" title="ViperOS" />
+                <figcaption>
+                  <h2>Viper <span>OS</span></h2>
+                  <p>Website desenvolvido para a Custom Rom ViperOS com página de download serverless em VueJS.</p>
+                  <a href="https://viperos.gitlab.io/" target="_blank">Visualizar</a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft">
+              <figure class="port-effect">
+                <img src="https://ik.imagekit.io/matheeusaf/jlarmoveis_p4gaFdeCa.webp" alt="Imagem de apresentação do website Jlar Móveis" title="Jlar Móveis" />
+                <figcaption>
+                  <h2>Jlar <span>Móveis</span></h2>
+                  <p>E-Commerce para venda de móveis online.</p>
+                  <a href="https://jlar.com.br/" target="_blank">Visualizar</a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+              <figure class="port-effect">
+                <img src="https://ik.imagekit.io/matheeusaf/claanimal_YL6fg0pTa.webp" alt="Imagem de apresentação do website Clã Animal" title="Clã Animal" />
+                <figcaption>
+                  <h2>Clã <span>Animal</span></h2>
+                  <p>Desenvolvido para a Veterinária e Pet Shop Clã Animal.</p>
+                  <a href="https://claanimal.com.br/" target="_blank">Visualizar</a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft">
+              <figure class="port-effect">
+                <img src="https://ik.imagekit.io/matheeusaf/eurotecimports_vnnsypjpI.webp" alt="Imagem de apresentação do website Eurotec Imports" title="Eurotec Imports" />
+                <figcaption>
+                  <h2>Eurotec <span>Imports</span></h2>
+                  <p>E-Commerce e institucional para a Eurotec Imports, comércio de peças importadas.</p>
+                  <a href="https://eurotecimports.com.br/" target="_blank">Visualizar</a>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Interest -->
+  <section id="interest" class="section">
+    <div class="container">
+      <!-- Title -->
+      <div class="section-title">
+        <h4 class="text-uppercase text-center"><i class="title-icon fa fa-heart"></i>Interesses</h4>
+      </div>
+      <div id="interest-card" class="card">
+        <div class="row no-gutters">
+          <div class="col-md-2 col-sm-4 col-xs-6  box text-center">
+            <div class="interest-icon">
+              <i class="fa fa-music"></i>
+              <span>Música</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+            <div class="interest-icon-even">
+              <i class="fa fa-gamepad"></i>
+              <span>Jogos</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+            <div class="interest-icon">
+              <i class="fa fa-camera"></i>
+              <span>Fotografia</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+            <div class="interest-icon-even">
+              <i class="fa fa-code"></i>
+              <span>Código</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+            <div class="interest-icon">
+              <i class="fa fa-plane"></i>
+              <span>Viajens</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+            <div class="interest-icon-even">
+              <i class="fa fa-film"></i>
+              <span>Filmes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <!-- Title -->
+      <div class="section-title">
+        <h4 class="text-uppercase text-center"><i class="title-icon fa fa-envelope"></i>Contato</h4>
+      </div>
+      <div class="row">
+        <div id="contact-card" class="col s12">
+          <!-- Form -->
+          <div class="card">
+            <div class="card-content">
+              <form action="https://formspree.io/matheus@wavedesign.com.br" method="POST" id="contact-form" name="c-form">
+                <div class="input-field">
+                  <input id="first_name" type="text" class="validate" name="first_name" required>
+                  <label for="first_name">Nome</label>
+                </div>
+                <div class="input-field">
+                  <input id="sub" type="text" class="validate" name="sub">
+                  <label for="sub">Assunto</label>
+                </div>
+                <div class="input-field">
+                  <input id="email" type="email" class="validate" name="email" required>
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                  <textarea id="textarea1" class="materialize-textarea" name="message" required></textarea>
+                  <label for="textarea1">Mensagem</label>
+                </div>
+                <div class="contact-send center">
+                  <button id="submit" name="contactSubmit" type="submit" value="Submit"
+                    class="btn waves-effect">Enviar</button>
+                </div>
+              </form>
+            </div>
+            <!-- Loader -->
+            <div id="form-loader" class="progress is-hidden">
+              <div class="indeterminate"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Let's go to the top baby-->
+  <div id="scroll-top">
+    <div id="scrollup"><i class="fa fa-angle-up"></i></div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="center">
+        Feito com <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> - Baseado no Material CV
+      </p>
+      <p class="center">Copyright ©
+        <script>
+          var ty = new Date();
+          document.write("" + ty.getFullYear());
+        </script> - <a href="https://wavedesign.com.br/" target="_blank">WAVE Design</a>
+      </p>
+    </div>
+  </footer>
+  <!-- JavaScript Refs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal@3.1.4/dist/scrollreveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+  <script src="static/js/custom.js"></script>
+</body>
+</html>
