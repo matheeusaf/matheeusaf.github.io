@@ -94,19 +94,13 @@ body .is-hidden {
     visibility: hidden;
 }
 
-html .btn,
-body .btn {
-    padding-top: 8px;
-}
-
-/* Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
-  }
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: #0d47a1;
-  }
-/* Scrollbar */
+}
 
 /*
 -------------------------------------------------------------------------------
@@ -630,7 +624,10 @@ body .btn {
     top: 171px;
 }
 
-nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+nav i,
+nav [class^="mdi-"],
+nav [class*="mdi-"],
+nav i.material-icons {
     line-height: 40px !important;
 }
 
