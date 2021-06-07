@@ -521,7 +521,7 @@
                 </div>
                 <div class="contact-send center">
                   <button id="submit" name="contactSubmit" type="submit" value="Submit"
-                    class="btn waves-effect" id="js_send">Enviar</button>
+                    class="btn waves-effect">Enviar</button>
                 </div>
               </form>
             </div>
@@ -572,10 +572,10 @@
         document.location.reload(true); 
     }
 
-    var sendButton = document.getElementById("js_send");
+    var sendButton = document.getElementById("submit");
 
     function js_send() {
-        sendButton.value='Sending…';
+        sendButton.value='Enviando…';
         sendButton.disabled=true;
         var request = new XMLHttpRequest();
         request.onreadystatechange = function() {
